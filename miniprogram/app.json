@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/comment/comment",
+    "pages/profile/profile",
+    "pages/map/map"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "最新电影",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+
+"tabBar": {
+  "color":"#d1d1d1",
+  "selectedColor": "#333333",
+  "list": [
+    {
+    "pagePath": "pages/home/home",
+    "text": "电影",
+    "iconPath": "images/dianying01.png",
+    "selectedIconPath": "images/dianying02.png"
+  },
+  {
+    "pagePath": "pages/profile/profile",
+    "text": "个人中心",
+    "iconPath": "images/gerenzhongxin01.png",
+    "selectedIconPath": "images/gerenzhongxin02.png"
+  },
+  {
+    "pagePath": "pages/map/map",
+    "text": "地图",
+    "iconPath": "images/map01.png",
+    "selectedIconPath": "images/map02.png"
+  }
+  ]
+}
+}

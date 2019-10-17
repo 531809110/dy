@@ -1,0 +1,61 @@
+/* pages/comment/comment.wxss */
+
+/* 背景图片：模糊 */
+
+.detail-container {
+  height: 400rpx;
+  opacity: 0.9;
+  filter: blur(40rpx);
+}
+
+/* 遮罩层 */
+
+.detail-mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* 显示在模糊图片的底层 */
+  z-index: -1;
+  width: 100%;
+  height: 400rpx;
+  background-color: #333;
+}
+
+/* 3.电影详细信息 */
+
+.detail-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400rpx;
+  padding: 20rpx;
+  display: flex;
+}
+
+/* 4.左侧图片 */
+
+.detail-img {
+  width: 280rpx;
+  height: 90%;
+  margin-right: 24rpx;
+}
+
+/* 右侧文字区域 介绍*/
+
+.detail {
+  line-height: 60rpx; /*行高*/
+}
+
+.detail view {
+  color: #fff;
+  font-size: 24rpx;
+}
+.desc{
+    margin-top: 20rpx;
+}
+.comment-img{
+  width:200rpx;
+  height:200rpx;
+  margin:20rpx;
+}

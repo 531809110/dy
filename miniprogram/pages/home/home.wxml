@@ -1,0 +1,20 @@
+<!--pages/home/home.wxml-->
+<!-- <text>pages/home/home.wxml</text> -->
+<!-- <van-button bindtap="getMovie">获得电影清单</van-button> -->
+<view class="movie" wx:for="{{list}}" wx:key="index">
+<!-- 左侧是电影图片 -->
+  <image class="movie-image" src="{{item.images.small}}"></image>
+<!-- 右侧是电影介绍 -->
+  <view class="movie-info">
+  <!-- 右侧标题 -->
+  <view class="movie-title">{{item.title}}</view>
+  <!-- 右侧评分 -->
+  <view class="movie-score">{{item.rating.average}}</view>
+  <!-- 右侧主角 -->
+  <view>主演：{{item.casts[0].name}}</view>
+  <!-- 右侧上映时间 -->
+  <view>年份：{{item.year}}</view>
+  <!-- 右侧详情按钮 -->
+  <button class="movie-comment" bindtap="jump" data-id="{{item.id}}">详情</button>
+  </view>
+</view>
